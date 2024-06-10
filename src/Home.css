@@ -1,0 +1,417 @@
+body{
+	padding:0;
+	margin:0;
+	background:#fff;
+	position:relative;
+	font-family: 'Raleway', sans-serif;
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+a:hover{
+	text-decoration:none;
+}
+input[type="button"],input[type="submit"],.contact-form input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;	
+	font-weight: 600;
+}	
+/* 全局 */
+.u-container{
+  background-color: #f8f9fd;;
+}
+/* 搜索栏 */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    margin-left: -20px;
+  }
+  
+  .search-input {
+    position:relative;
+    width: 200px;
+    height: 40px;
+    padding: 0 20px;
+    margin-right: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #edeef2;
+    font-size: 16px;
+    outline: none;
+  }
+  .icon-santiaogang{
+    font-size: 16px;
+    transform: scale(1.5);
+    float:left;
+    margin-right: 30px;
+  }
+  .icon-sousuo{
+    position:absolute;
+    margin-right: 180px;
+    font-size: 16px;
+  }
+  .icon-16gl-scanCode{
+    position:absolute;
+    margin-left: 200px;
+    font-size: 16px;
+  }
+  .icon-yuyin{
+    position:absolute;
+    margin-left: 300px;
+    font-size: 16px;
+    transform: scale(1.5);
+  }
+  .morning{
+    color: #262d40;
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
+  /* 三个音乐封面 */
+  .music-covers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .music-cover {
+    position: relative;
+    width: 185px;
+    height: 160px;
+    overflow: hidden;
+    margin: 0 3px;
+  }
+  
+  .music-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .play-overlay .iconfont {
+    font-size: 50px;
+    color: #fff;
+  }
+  
+  .music-cover:hover .play-overlay {
+    opacity: 1;
+  }
+  /* 推荐歌曲列表 */
+  .night_box{
+    color: #262d40;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  .littlebox{
+    margin-top: 10px;
+  }
+  .littlebox .littlemusic .li1 {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  .littlebox .littlemusic .li1 img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  .littlebox .littlemusic .li1 p {
+    .littlebox .littlemusic .li1 p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+  
+  .night {
+    color: #262d40;
+    margin-left: 25px;
+    height: 10px;
+  }
+  
+  ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  .icon-bofang{
+    position:absolute;
+    right: 025px;
+  }
+  /* 播放器 */
+  .player {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.album-art {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.track-info {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.track-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.artist {
+    color: #888;
+}
+
+.play-btn{
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+.icon-bofang1{
+  font-size: 28px !important;
+
+}
+/* 底部导航 */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* 页脚高度 */
+  background-color: #f5f5f5;
+  text-align: center;
+  line-height: 50px;
+}
+.footbox{
+  display:flex;
+  position: fixed;
+  bottom: 0;
+}
+.box{
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+}
+.icon-wangyiyun{
+  font-size: 28px !important;
+  transform:scale(2.0);
+  color:#fe3351;
+}
+.icon-faxian{
+  font-size: 28px !important;
+}
+.icon-diantai{
+  font-size: 28px !important;
+}
+.icon-qunliao{
+  font-size: 28px !important;
+}
+.icon-wode{
+  font-size: 28px !important;
+}
+/* 侧边栏 */
+.container {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #f1f1f1;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.profile {
+  text-align: center;
+  padding: 20px;
+}
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 10px; 
+  margin-top: 40px; 
+  vertical-align: middle; 
+}
+.profile .name {
+  margin-top: 10px; 
+  text-align: center; 
+  font-size: 20px; 
+  font-weight: 550; 
+  margin-top: 40px;
+  color: #333; 
+  display: inline-block;
+  vertical-align: middle; 
+}
+.new-image{
+  font-size: 30px;
+  margin-top: 35px;
+}
+
+/* Style the main menu */
+.menu {
+  padding: 15px;
+}
+.rounded-rectangle {
+  width: 210px;
+  margin-left: 10px; 
+  border-radius: 10px; 
+  background-color: #ffffff; 
+  padding: 10px;
+  margin-top: 5px; 
+}
+.menu hr{
+  border-width: 0.1px;
+  color:#e7e7e7;
+  }
+.menu a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.menu-icon,
+.sub-menu-icon {
+  width: 16px; 
+  height: 16px; 
+  margin-right: 5px; 
+}
+
+.submenu {
+  margin-top: 10px;
+  width: 210px;
+  margin-left: 10px; 
+  border-radius: 10px; 
+  background-color: #ffffff; 
+  padding: 10px; 
+  margin-top: 5px;
+}
+
+.submenu p {
+  color: #7c7474; 
+
+  text-decoration: none;
+}
+
+.sub-links a {
+  display: block;
+  color: #000000; 
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.sub-links a:hover {
+  color: rgb(79, 69, 69); 
+}
+
+.submenu p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #421f17;
+  margin-top: 6px;
+}
+.rounded-image {
+  display: block;
+  width: 230px; 
+  height: auto; 
+  border-radius: 19px; 
+  margin-top: 20px; 
+  margin-left: 10px;
+}
+.new-image {
+  position: fixed;
+  top: 13px;
+  left: 205px; 
+  width: 20px; 
+  height: 20px; 
+}
+
+.content {
+  margin-left: 250px; /* 侧边栏的宽度 */
+  height: 100vh;
+  background-color: #ffffff;
+  /* 其他样式 */
+}
